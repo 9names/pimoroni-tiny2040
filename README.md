@@ -16,7 +16,7 @@ RP2040 chip according to how it is connected up on the Tiny2040.
 To use this crate, your `Cargo.toml` file should contain:
 
 ```toml
-pimoroni-tiny2040 = "0.1.0"
+pimoroni-tiny2040 = "0.2.0"
 ```
 
 In your program, you will need to call `pimoroni_tiny2040::Pins::new` to create
@@ -30,7 +30,7 @@ devices. See the [examples](./examples) folder for more details.
 To compile an example, clone the _rp-hal_ repository and run:
 
 ```console
-rp-hal/boards/pimoroni-tiny2040 $ cargo build --release --example <name>
+pimoroni-tiny2040 $ cargo build --release --example <name>
 ```
 
 You will get an ELF file called
@@ -44,7 +44,7 @@ USB drive exported by the RP2040 bootloader, simply boot your board into
 bootloader mode and run:
 
 ```console
-rp-hal/boards/pimoroni-tiny2040 $ cargo run --release --example <name>
+pimoroni-tiny2040 $ cargo run --release --example <name>
 ```
 
 If you get an error about not being able to find `elf2uf2-rs`, try:
